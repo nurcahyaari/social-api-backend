@@ -21,6 +21,7 @@ mongose.connection.on('disconnected', () => {
 // start server
 async function startServer() {
   try {
+    throw "Error";
     const mongoServer = await db.connectMongoDB();
     await seederData();
 
